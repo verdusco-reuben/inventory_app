@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>DSW App</title>
+    <link type="text/css" rel="stylesheet" href="/style.css" media="screen,projection">
+</head>
+    <body>
+        <br>
+        <h2 style="text-align: center;">Here is the dashboard, yo</h2>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <p><u>New addition:</u></p>
+        <form action="newitem" method="post" style="text-align: left;">
+
+            <p>Category: <input type="number" name="category"></p>
+            <p>SKU: <input type="number" name="SKU"></p>
+            <p>Description: <input type="text" name="desc"></p>
+            <p>Vendor: <input type="text" name="vendor"></p>
+            <p>Color: <input type="text" name="color"></p>
+            <p>Qty: <input type="number" name="qty"></p>
+
+            <input type="submit" value="Submit">
+        </form>
+        <% for (x in all_items){ %>
+
+                <div class="new_item_div">
+                    <p>Category: <%= all_items[x].category %></p>
+                    <p>SKU: <%= all_items[x].SKU %></p>
+                    <p>Description: <%= all_items[x].description %></p>
+                    <p>Vendor: <%= all_items[x].vendor %></p>
+                    <p>Color: <%= all_items[x].color %></p>
+                    <p>Qty: <%= all_items[x].qty %></p>
+                </div>
+            <% } %>
+    </body>
+</html>

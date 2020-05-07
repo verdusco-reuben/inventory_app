@@ -1,0 +1,36 @@
+body{
+    background-image: url("beach-sand.jpeg");
+    width: 70%;
+    margin-left:100px;
+}
+#container{
+    display: inline-block;
+    vertical-align: top;
+}
+#container2{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:50px;
+}
+h2{
+    background-color: rgba(196, 191, 191, 0.918);
+    padding: 20px;
+    border: 1px solid gray;
+}
+form{
+    text-align: right;
+}
+#errorbox{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+.new_item_div{
+    border-radius: 25px;
+    background-color: rgba(145, 227, 241, 0.918);
+    padding: 20px;
+    border: 3px solid gray;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
